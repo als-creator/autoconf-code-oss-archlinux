@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "Owlet (Slate)", // Тема оформления
   "files.defaultLanguage": "html", // Использовать дефолтный язык html для новых файлов
   "files.autoSave": "onFocusChange", // Автосохранение файла при потере фокуса окна
   "editor.formatOnSave": true, // Форматировать код при сохранении файла
@@ -29,9 +30,6 @@
   "editor.fontLigatures": true, // Улучшить качество печати моноширинных шрифтов
   "http.proxyStrictSSL": true, // Пользоваться стандартным менеджером закачек для скачивания зависимостей
   "editor.lineNumbers": "relative", // Выравнивание строки подчёркиванием и указанием номера строки
-  "terminal.integrated.cursorStyle": "line", // Стиль строки курсора терминала
-  "terminal.integrated.cursorBlinking": true, // Курсор терминала мигает
-  "terminal.integrated.copyOnSelection": true, // Копировать выделенный текст в терминал автоматически
   "explorer.confirmDelete": false, // Не требовать подтверждения при удалении файлов
   "search.useIgnoreFiles": true, // Задействует содержимое .gitignore при поиске
   "search.exclude": {
@@ -93,7 +91,12 @@
   "editor.suggest.showUnits": true, // Показывать подсказки по единицам измерения
   "editor.suggest.showValues": true, // Показывать подсказки по значениям
   "editor.suggest.showVariables": true, // Показывать подсказки по переменным
-  "terminal.integrated.defaultProfile.linux": "fish", // Устанавливаем шелл по умолчанию
+  "terminal.integrated.shell.linux": "/usr/bin/fish", // Устанавливаем шелл по умолчанию
+  "terminal.integrated.shellArgs.linux": ["--login", "--debug-level 3"], //передаваемые в терминал документы
+  "terminal.integrated.cursorStyle": "line", // Стиль строки курсора терминала
+  "terminal.integrated.cursorBlinking": true, // Курсор терминала мигает
+  "terminal.integrated.copyOnSelection": true, // Копировать выделенный текст в терминал автоматически
+  "terminal.integrated.fontFamily": "Hack",
   "git.enabled": true, // Встроенная интеграция git
   "git.autofetch": true, // Включить миграцию проектов в автономный режим
   "git.path": "/usr/bin/git", // Конкретный путь к git-executable
@@ -101,6 +104,4 @@
   "npm.packageManager": "npm", //Пакетник для npm
   // "editor.smoothScrolling": true, // Плавная прокрутка в редакторе
   // "editor.cursorSmoothCaretAnimation": "on", // Включить плавную анимацию курсора
-  "sync.gist": "97fc7d05ceae8261c734efb500452ccb",
-  "workbench.colorTheme": "Owlet (Slate)"
 }
