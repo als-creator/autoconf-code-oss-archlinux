@@ -9,7 +9,6 @@ ms-ceintl.vscode-language-pack-ru
 ms-python.python
 ms-python.debugpy
 matt-rudge.auto-open-preview-panel
-teticio.python-envy
 charliermarsh.ruff
 xirider.livecode
 rust-lang.rust-analyzer
@@ -25,5 +24,4 @@ itsjonq.owlet
 gulajavaministudio.mayukaithemevsc
 samiurrahmanmukul.backspace-theme
 gigacode.gigacode-vscode
-codium.codium
-continue.continue
+
