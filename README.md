@@ -14,7 +14,7 @@
 ## 🚀 Быстрая установка
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/als-creator/autoconf-code-oss/main/autoconf-code-oss-archlinux.sh | sh
+curl -fsSL https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/autoconf-code-oss-archlinux.sh | sh
 ```
 
 Команда автоматически загрузит и выполнит сценарий установки, обеспечив нужный уровень комфорта и производительности.
