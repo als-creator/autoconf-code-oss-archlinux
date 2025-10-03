@@ -15,7 +15,7 @@ SETTINGS_FILE="${CONFIG_DIR}/settings.json"
 mkdir -p "$CONFIG_DIR"
 
 # Скачиваем настройки и список расширений с GitHub
-SETTINGS_JSON_URL="https://raw.githubusercontent.com/als-creator/autoconf-code-oss/main/settings.json"
+SETTINGS_JSON_URL="https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/settings.json"
 
 wget -qO- "$SETTINGS_JSON_URL" > "$SETTINGS_FILE"
 
