@@ -19,6 +19,26 @@ SETTINGS_JSON_URL="https://raw.githubusercontent.com/als-creator/autoconf-code-o
 
 wget -qO- "$SETTINGS_JSON_URL" > "$SETTINGS_FILE"
 
+# Добавляем синхронизацию папки snippets
+SNIPPETS_DIR="${CONFIG_DIR}/snippets"
+mkdir -p "$SNIPPETS_DIR"
+
+echo "Скачиваем сниппеты для JavaScript..."
+wget -qO- "https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/snippets/javascript.json" > "${SNIPPETS_DIR}/javascript.json"
+
+echo "Скачиваем сниппеты для Python..."
+wget -qO- "https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/snippets/python.json" > "${SNIPPETS_DIR}/python.json"
+
+echo "Скачиваем сниппеты для Go..."
+wget -qO- "https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/snippets/go.json" > "${SNIPPETS_DIR}/go.json"
+
+echo "Скачиваем сниппеты для PHP..."
+wget -qO- "https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/snippets/php.json" > "${SNIPPETS_DIR}/php.json"
+
+echo "Скачиваем сниппеты для Bash/Shell..."
+wget -qO- "https://raw.githubusercontent.com/als-creator/autoconf-code-oss-archlinux/main/snippets/shellscript.json" > "${SNIPPETS_DIR}/shellscript.json"
+
 # Готово!
-echo "Все настройки установлены!"
+echo "Все настройки и сниппеты установлены!"
+echo "Путь к сниппетам: $SNIPPETS_DIR"
 exit 0
